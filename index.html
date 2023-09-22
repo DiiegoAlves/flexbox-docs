@@ -10,9 +10,24 @@
 <body>
 
     <h1>Flexbox</h1>
+    
+    <nav class="nav">
+        <ul>
+            <li> <a href="#displayflex">Display Flex</li>
+            <li> <a href="#justifycontent">Justify content</a></li>
+            <li> <a href="#flexdirection">Flex direction</a></li> 
+            <li> <a href="#alignitems">Align items</a></li>
+            <li> <a href="#flexwrap">Flex wrap</a></li>
+        </ul>
+    </nav>
+   
+   
     <h2>Documentação</h2>   
-    <h3>display:flex</h3>
+
+    <h3 id="displayflex">display:flex</h3>
+
 <!-- Abreviação Emmet: p.descricao-propriedade -->
+
 <p class="descricao-propriedade">
     A propriedade display: flex deve ser a primeira a ser declarada no CSS. A partir dela 
     é que o CSS vai entender que precisa estilziar o contéudo do contêiner com
@@ -55,12 +70,13 @@
  <!-- Propriedades do justify-content -->
 
 
-    <h3>justify-content</h3>
-   <p class="p.descricao-propriedade">
-    A propriedade justify-content pode ser usada para justificar o conteúdo do elemento contêiner em seu eixo primário, ou seja, eixo x (row, row-reverse) ou eixo y (column, column-reverse). </p>
+    <h3 id="justifycontent">justify-content</h3>
+   
+    <p>A propriedade justify-content pode ser usada para justificar o conteúdo do elemento contêiner em seu eixo primário, ou seja, eixo x (row, row-reverse) ou eixo y (column, column-reverse).</p>
+
+    <h3>center</h3>
+
     
-    <h4>center</h4>
-    <p class="descricao-propriedade"></p>
     <p>O valor "center" vai alinhar o centeúdo ao centro do eixo primário. </p>
 
     <p>Exemplo:</p>
@@ -173,7 +189,8 @@
 
 <!-- Propriedades do align-items -->
 
-<h3>align-items</h3>
+<h3 id="alignitems">align-items</h3>
+
 
 <p>O align-items nos permite fazer alterações no alinhamento dos itens do flexbox, podendo mudar para cima, para baixo, mas sempre é mantido no eixo X (na horizontal).</p>
 
@@ -189,17 +206,240 @@
 
 <h3>align-items-stretch</h3>
 
-<p>O align-items-stretch nos permite fazer alterações no alinhamento dos itens do flexbox, podendo mudar para cima, para baixo, mas sempre é mantido no eixo X (na horizontal).</p>
+<p>O align-items-stretch nos permite fazer alterações no esticamento do item.</p>
 
 <p>Exemplo:</p>
 
-<div class="conteiner display-flex align-items-stretch">
-    <div class="contido">align-items-stretch</div>
+<div class="conteiner2 display-flex align-items-stretch">
+    <div class="contido2">align-items-stretch</div>
+    <div class="contido2"></div>
+    <div class="contido2"></div>
+    <div class="contido2"></div>
+    <div class="contido2"></div>
+</div>
+
+<h3>align-items-center</h3>
+
+<p>O align-items-center faz com que os itens fiquem alinhados ao centro no eixo x.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex align-items-center">
+    <div class="contido">align-items-center</div>
     <div class="contido"></div>
     <div class="contido"></div>
     <div class="contido"></div>
     <div class="contido"></div>
 </div>
+
+    <h3>align-items-flex-start</h3>
+
+    <p>O align-items-flex-start faz com que os itens fiquem alinhados no início do eixo x.</p>
+    
+    <p>Exemplo:</p>
+
+<div class="conteiner display-flex align-items-flex-start">
+    <div class="contido">align-items-flex-start</div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+</div>
+
+<h3>align-items-flex-end</h3>
+
+<p>O align-items-flex-end faz com que os itens fiquem alinhados no final do eixo x.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex align-items-flex-end">
+    <div class="contido">align-items-flex-end</div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+</div>
+
+<h3>align-items-start</h3>
+
+<p>O align-items-start faz com que os itens fiquem alinhados ao ínicio do container.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex align-items-start">
+    <div class="contido">align-items-start</div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+</div>
+
+<h3>align-items-end</h3>
+
+<p>O align-items-end faz com que os itens fiquem alinhados ao final do container.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex align-items-end">
+    <div class="contido">align-items-end</div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+</div>
+
+<h3>align-items-baseline</h3>
+
+<p>O align-items-baseline faz com que os itens sejam alinhados na linha de base do container.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex align-items-baseline">
+    <div class="contido">align-items-baseline</div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+</div>
+
+<h3>align-items-initial</h3>
+
+<p>O align-items-initial faz com que o item volte ao padrão inicial do container.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex align-items-initial">
+    <div class="contido">align-items-initial</div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+</div>
+
+<h3>align-items-inherit</h3>
+
+<p>O align-items-inherit faz com que o item herde a mesma propriedade do elemento pai.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex align-items-inherit">
+    <div class="contido">align-items-inherit</div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+</div>
+
+<!-- Propriedades do Flex-wrap -->
+
+<h3 id="flexwrap">Flex-wrap</h3>
+   
+<p> A propriedade flex-wrap faz com que os items possam se agrupar ou não, podendo ficar na mesma linha e também podendo ser quebradas.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex flex-wrap">
+    <div class="contido">flex-wrap</div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+</div>
+
+<h3>flex-wrap-nowrap</h3>
+
+<p> A propriedade flex-wrap-nowrap faz com que os itens permaneça em sua propriedade padrão.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex flex-wrap-nowrap">
+    <div class="contido">flex-wrap-nowrap</div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+</div>
+
+<h3>flex-wrap-reverse</h3>
+
+<p> A propriedade flex-wrap-wrapreverse faz com que os itens tenham uma quebra de linha quando você embrulha, porém invertido do final ao início.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex flex-wrap-wrapreverse">
+    <div class="contido">flex-wrap-wrapreverse</div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+</div>
+
+<h3>flex-wrap-initial</h3>
+
+<p> A propriedade flex-wrap-initial faz com que os itens tenham sua propriedade como padrão.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex flex-wrap-initial">
+    <div class="contido">flex-wrap-initial</div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+</div>
+
+<h3>flex-wrap-inherit</h3>
+
+<p> A propriedade flex-wrap-inherit faz com que os itens herde a mesma propriedade do elemento pai.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex flex-wrap-inherit">
+    <div class="contido">flex-wrap-inherit</div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+</div>
+
+<!-- Propriedades do flex-flow -->
+
+<h3>flex-direction</h3>
+
+
+<p>O flex direction faz com que os itens tenham uma direção para seguir.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex flex-direction">
+    <div class="contido">flex-direction</div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+</div>
+
+<h3>flex-direction:row</h3>
+
+
+<p>O flexdirection:row faz com que os itens fiquem na linha reversa da padrão.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex flex-direction-row-reverse">
+    <div class="contido">flex-direction-row-reverse</div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+    <div class="contido"></div>
+</div>
+
+<h3>flex-direction:column</h3>
+
+
+<p>O flexdirection:column</p>
+
+<p>Exemplo:</p>
 
 </body>
 </html>
