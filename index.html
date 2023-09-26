@@ -18,6 +18,8 @@
             <li> <a href="#flexdirection">Flex direction</a></li> 
             <li> <a href="#alignitems">Align items</a></li>
             <li> <a href="#flexwrap">Flex wrap</a></li>
+            <li> <a href="#flexflow">Flex flow</a></li>
+            <li> <a href="#align-content">Align content</a></li>
         </ul>
     </nav>
    
@@ -74,7 +76,7 @@
    
     <p>A propriedade justify-content pode ser usada para justificar o conteúdo do elemento contêiner em seu eixo primário, ou seja, eixo x (row, row-reverse) ou eixo y (column, column-reverse).</p>
 
-    <h3>center</h3>
+    <h3>justify-content:center</h3>
 
     
     <p>O valor "center" vai alinhar o centeúdo ao centro do eixo primário. </p>
@@ -89,7 +91,7 @@
     <div class="contido"></div>
 </div>
 
-<h3>flex-start</h3>
+<h3>justify-content:flex-start</h3>
 
 <p>A propriedade flex start alinha os contêiners para o lado esquerdo, o ínicio dela.</p>
 
@@ -103,7 +105,7 @@
     <div class="contido"></div>
 </div>
 
-<h3>flex-end</h3>
+<h3>justify-content:flex-end</h3>
 
 <p>A propriedade flex start alinha os contêiners para o lado direto, o final dela.</p>
 
@@ -117,7 +119,7 @@
     <div class="contido"></div>
 </div>
 
-<h3>space-beetwen</h3>
+<h3>justify-content:space-beetwen</h3>
 
 <p>A propriedade space-beetwen faz com que os itens tenham um espaçamento proporcional de um ao outro.</p>
 
@@ -131,7 +133,7 @@
     <div class="contido"></div>
 </div>
 
-<h3>space-around</h3>
+<h3>justify-content:space-around</h3>
 
 <p>A propriedade space around faz com que o item inicial e final tenham o espaçamento igual, enquanto os demais é divididos iguais, mas com espaçamento divergente do inicial e final.</p>
 
@@ -145,7 +147,7 @@
     <div class="contido"></div>
 </div>
 
-<h3>space-evenly</h3>
+<h3>justify-content:space-evenly</h3>
 
 <p>A propriedade space evenly faz com que o espaçamento seja dividido de forma igual para todos os itens.</p>
 
@@ -159,7 +161,7 @@
     <div class="contido"></div>
 </div>
 
-<h3>Initial</h3>
+<h3>justify-content:initial</h3>
 
 <p>A propriedade Initial faz com que o item volte para o padrão.</p>
 
@@ -173,7 +175,7 @@
     <div class="contido"></div>
 </div>
 
-<h3>inherit</h3>
+<h3>justify-content:inherit</h3>
 
 <p>A propriedade Inherit herda a mesma propriedade do elemento pai.</p>
 
@@ -204,7 +206,7 @@
     <div class="contido"></div>
 </div>
 
-<h3>align-items-stretch</h3>
+<h3>align-items:stretch</h3>
 
 <p>O align-items-stretch nos permite fazer alterações no esticamento do item.</p>
 
@@ -218,7 +220,7 @@
     <div class="contido2"></div>
 </div>
 
-<h3>align-items-center</h3>
+<h3>align-items:center</h3>
 
 <p>O align-items-center faz com que os itens fiquem alinhados ao centro no eixo x.</p>
 
@@ -232,7 +234,7 @@
     <div class="contido"></div>
 </div>
 
-    <h3>align-items-flex-start</h3>
+    <h3>align-items:flex-start</h3>
 
     <p>O align-items-flex-start faz com que os itens fiquem alinhados no início do eixo x.</p>
     
@@ -246,7 +248,7 @@
     <div class="contido"></div>
 </div>
 
-<h3>align-items-flex-end</h3>
+<h3>align-items:flex-end</h3>
 
 <p>O align-items-flex-end faz com que os itens fiquem alinhados no final do eixo x.</p>
 
@@ -260,7 +262,7 @@
     <div class="contido"></div>
 </div>
 
-<h3>align-items-start</h3>
+<h3>align-items:start</h3>
 
 <p>O align-items-start faz com que os itens fiquem alinhados ao ínicio do container.</p>
 
@@ -274,7 +276,7 @@
     <div class="contido"></div>
 </div>
 
-<h3>align-items-end</h3>
+<h3>align-items:end</h3>
 
 <p>O align-items-end faz com que os itens fiquem alinhados ao final do container.</p>
 
@@ -288,7 +290,7 @@
     <div class="contido"></div>
 </div>
 
-<h3>align-items-baseline</h3>
+<h3>align-items:baseline</h3>
 
 <p>O align-items-baseline faz com que os itens sejam alinhados na linha de base do container.</p>
 
@@ -297,12 +299,12 @@
 <div class="conteiner display-flex align-items-baseline">
     <div class="contido">align-items-baseline</div>
     <div class="contido"></div>
-    <div class="contido"></div>
-    <div class="contido"></div>
-    <div class="contido"></div>
+    <div class="contido3">3</div>
+    <div class="contido">4</div>
+    <div class="contido3">5</div>
 </div>
 
-<h3>align-items-initial</h3>
+<h3>align-items:initial</h3>
 
 <p>O align-items-initial faz com que o item volte ao padrão inicial do container.</p>
 
@@ -316,7 +318,7 @@
     <div class="contido"></div>
 </div>
 
-<h3>align-items-inherit</h3>
+<h3>align-items:inherit</h3>
 
 <p>O align-items-inherit faz com que o item herde a mesma propriedade do elemento pai.</p>
 
@@ -346,7 +348,7 @@
     <div class="contido"></div>
 </div>
 
-<h3>flex-wrap-nowrap</h3>
+<h3>flex-wrap:nowrap</h3>
 
 <p> A propriedade flex-wrap-nowrap faz com que os itens permaneça em sua propriedade padrão.</p>
 
@@ -360,7 +362,7 @@
     <div class="contido"></div>
 </div>
 
-<h3>flex-wrap-reverse</h3>
+<h3>flex-wrap:reverse</h3>
 
 <p> A propriedade flex-wrap-wrapreverse faz com que os itens tenham uma quebra de linha quando você embrulha, porém invertido do final ao início.</p>
 
@@ -374,7 +376,7 @@
     <div class="contido"></div>
 </div>
 
-<h3>flex-wrap-initial</h3>
+<h3>flex-wrap:initial</h3>
 
 <p> A propriedade flex-wrap-initial faz com que os itens tenham sua propriedade como padrão.</p>
 
@@ -388,7 +390,7 @@
     <div class="contido"></div>
 </div>
 
-<h3>flex-wrap-inherit</h3>
+<h3>flex-wrap:inherit</h3>
 
 <p> A propriedade flex-wrap-inherit faz com que os itens herde a mesma propriedade do elemento pai.</p>
 
@@ -402,44 +404,180 @@
     <div class="contido"></div>
 </div>
 
-<!-- Propriedades do flex-flow -->
+<!-- Propriedades do flex-direction -->
 
 <h3>flex-direction</h3>
 
 
-<p>O flex direction faz com que os itens tenham uma direção para seguir.</p>
-
-<p>Exemplo:</p>
-
-<div class="conteiner display-flex flex-direction">
-    <div class="contido">flex-direction</div>
-    <div class="contido"></div>
-    <div class="contido"></div>
-    <div class="contido"></div>
-    <div class="contido"></div>
-</div>
-
-<h3>flex-direction:row</h3>
+<p>O flex direction define o alinhamento dos itens dentro do container podendo ser na horizontal ou em colunas (na vertical).</p>
 
 
-<p>O flexdirection:row faz com que os itens fiquem na linha reversa da padrão.</p>
+<h3>flex-direction:row-reverse</h3>
+
+
+<p>O flexdirection:row faz com que os itens fiquem na linha reversa da padrão, mudando a direção em que o flexbox está seguindo.</p>
 
 <p>Exemplo:</p>
 
 <div class="conteiner display-flex flex-direction-row-reverse">
     <div class="contido">flex-direction-row-reverse</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+</div>
+
+<h3>flex-direction:column</h3>
+
+<p>O flex-direction:column faz com que os itens se alinhem em formato de colunas, na vertical ficando um em cima do outro.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex flex-direction-column">
+    <div class="contido">flex-direction-column</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+</div>
+
+<h3>flex-direction:column-reverse</h3>
+
+<p>O flex-direction:column-reverse faz a mesma coisa da propriedade column, com um diferencial que é inverter a ordem dos itens.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner2 display-flex flex-direction-column-reverse">
+    <div class="contido">flex-direction-column-reverse</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+</div>
+
+<h3>flex-direction:initial</h3>
+
+<p>O flex-direction:initial faz com que os itens fiquem em suas propriedades padrão.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex flex-direction-initial">
+    <div class="contido">flex-direction-initial</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+</div>
+
+<h3>flex-direction:inherit</h3>
+
+<p>O flex-direction:inherit faz com que os itens herdem a propriedade do elemento pai.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex flex-direction-inherit">
+    <div class="contido">flex-direction-inherit</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+</div>
+
+<!-- Propriedades do flex-flow -->
+
+<h3 id="flexflow">flexflow</h3>
+   
+<p>A propriedade flex-flow faz com que as duas propriedades "flex-direction" e "flex-wrap" se unam, fazendo uma abreviação de seus valores.</p>
+
+<h3>flex-flow:row nowrap</h3>
+
+<p>O flex-flow: row nowrap é uma junção dos valores das propriedades flex-direction e flex-wrap. O row é um valor padrão da propriedade flex-direction, que não tem nenhum efeito. E o nowrap também é um valor padrão do flex-wrap.</p>
+
+<p>Exemplo:</p>
+
+
+<div class="conteiner display-flex flex-flow-row-nowrap">
+    <div class="contido">flex-flow: row nowrap</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+</div>
+
+<h3>flex-flow:row-reverse wrap</h3>
+
+<p>O flex-flow: row-reverse wrap é uma junção dos valores das propriedades flex-direction e flex-wrap. O row-reverse é um valor da propriedade flex-direction, e faz com que os itens invertam sua direção que o flexbox está seguindo. E o wrap também é um valor do flex-wrap que faz com que os itens se quebrem passando para outras linhas quando são embrulhadas.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex flex-flow-row-reverse-wrap">
+    <div class="contido">flex-flow: row-reverse wrap</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+</div>
+
+<h3>flex-flow:column wrap-reverse</h3>
+
+<p>O flex-flow: column wrap-reverse mescla o valor column da propriedade flex-direction que serve para colocar os itens em colunas e o valor wrap-reverse da propriedade flex-wrap se comporta da mesma maneira que o wrap, mas a quebra de linha ocorre na direção contrária.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner2 display-flex flex-flow-column-wrap-reverse">
+    <div class="contido">flex-flow: column wrap-reverse</div>
     <div class="contido"></div>
     <div class="contido"></div>
     <div class="contido"></div>
     <div class="contido"></div>
 </div>
 
-<h3>flex-direction:column</h3>
+<h3>flex-flow:column-reverse initial</h3>
 
-
-<p>O flexdirection:column</p>
+<p>O flex-flow: column-reverse initial faz com que o valor column-reverse faça os itens ficarem em colunas, porém invertindo a ordem dos mesmos, já o valor initial faz com que fiquem em valores padrões, assim não causando nenhum efeito sobre os itens.</p>
 
 <p>Exemplo:</p>
+
+<div class="conteiner display-flex flex-flow-column-reverse-initial">
+    <div class="contido">flex-flow: column-reverse initial</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+</div>
+
+<!-- Propriedades do align-content -->
+
+<h3 id="align-content">align-content</h3>
+   
+<p>A propriedade align-content é</p>
+
+<h3>align-content:stretch</h3>
+
+<p>O align-content:stretch é considerado um valor padrão, ele estica os itens para preencherem os espaços vazios.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex align-content-stretch">
+    <div class="contido">align-content-stretch</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+    <div class="contido">4</div>
+    <div class="contido">5</div>
+    
+</div>
+
+<h3>align-content:center</h3>
+
+<p>O align-content:center é considerado um valor padrão, ele estica os itens para preencherem os espaços vazios.</p>
+
+<p>Exemplo:</p>
+
+<div class="conteiner display-flex align-content-center">
+    <div class="contido">1</div>
+    <div class="contido">2</div>
+    <div class="contido">3</div>
+</div>
 
 </body>
 </html>
